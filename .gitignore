@@ -1,0 +1,38 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+out/
+.out/
+out/
+build/
+.idea/
+.gradle/
+
+app/src/main/java/ackee/rxexample/Constants.java
+
+
+#iml files
+*.iml
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# linux files
+.directory
+*.*~
+
+# mac files
+.DS_Store
+
+Thumbs.db
+thumbs.db

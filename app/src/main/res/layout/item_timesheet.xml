@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    card_view:cardCornerRadius="4dp"
+                                    card_view:cardUseCompatPadding="true"
+                                    card_view:contentPadding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/txt_spent_hours"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/txt_timesheet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                tools:text="Implementace aplikace"
+                />
+
+            <TextView
+                android:id="@+id/txt_issue_number"
+                android:layout_width="wrap_content"
+                tools:text="#3254"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/txt_issue_description"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                tools:text="Implementuj appku"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_spent_hours"
+            android:layout_width="wrap_content"
+            tools:text="0,12h"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
